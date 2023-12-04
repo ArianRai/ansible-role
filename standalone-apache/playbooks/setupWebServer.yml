@@ -1,5 +1,5 @@
 - name: Setup Webserver
-  hosts: webserver
+  hosts: all
   roles:
       - ../roles/webserver
   become: true
