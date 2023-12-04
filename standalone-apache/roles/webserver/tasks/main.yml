@@ -1,11 +1,8 @@
-vars:
-    doc_root: /var/www/example
-
 - name: Install Apache
   apt:
-    name: "apache2"
-    state: present
-    update_cache: yes
+      name: 'apache2'
+      state: present
+      update_cache: yes
   become: true
 
 - name: Create custom document root
